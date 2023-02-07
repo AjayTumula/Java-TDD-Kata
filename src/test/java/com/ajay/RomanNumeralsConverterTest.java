@@ -20,4 +20,13 @@ public class RomanNumeralsConverterTest {
 
         assertEquals("II",romanNumeralsConverter.convert(2));
     }
+
+    @Test
+    public void ConvertThreeToNumeral() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+
+        assertEquals("III",romanNumeralsConverter.convert(3));
+    }
+
+
 }
