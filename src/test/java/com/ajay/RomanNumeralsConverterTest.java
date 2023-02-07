@@ -50,4 +50,25 @@ public class RomanNumeralsConverterTest {
 
         assertEquals("LIV", romanNumeralsConverter.convert(54));
     }
+
+    @Test
+    public void ConvertOneTwentyFiveToNumeral() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+
+        assertEquals("CXXV",romanNumeralsConverter.convert(125));
+    }
+
+    @Test
+    public void ConvertFiveFiftySixToNumeral() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+
+        assertEquals("DLVI",romanNumeralsConverter.convert(556));
+    }
+
+    @Test
+    public void ConvertOneThousandFifteenToNumeral() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+
+        assertEquals("MXV",romanNumeralsConverter.convert(1015));
+    }
 }
