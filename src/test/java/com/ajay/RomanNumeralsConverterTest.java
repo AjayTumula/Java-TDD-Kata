@@ -71,4 +71,19 @@ public class RomanNumeralsConverterTest {
 
         assertEquals("MXV",romanNumeralsConverter.convert(1015));
     }
+
+    //Negative test cases
+    @Test
+    public void ConvertZeroToNumeral() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+
+        assertEquals("Not a roman numeral",romanNumeralsConverter.convert(0));
+    }
+
+    @Test
+    public void ConvertThreeThousandOneHundredToNumeral() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+
+        assertEquals("Not a roman numeral",romanNumeralsConverter.convert(0));
+    }
 }
