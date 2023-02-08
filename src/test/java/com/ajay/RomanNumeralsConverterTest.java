@@ -82,6 +82,41 @@ public class RomanNumeralsConverterTest {
         assertEquals(1,integerNumberConverter.convert("I"));
     }
 
+    @Test
+    public void ConvertRomanNumberTwoToNumber() {
+        IntegerNumberConverter integerNumberConverter = new IntegerNumberConverter();
+
+        assertEquals(2,integerNumberConverter.convert("II"));
+    }
+
+    @Test
+    public void ConvertRomanNumberThreeToNumber() {
+        IntegerNumberConverter integerNumberConverter = new IntegerNumberConverter();
+
+        assertEquals(3,integerNumberConverter.convert("III"));
+    }
+
+    @Test
+    public void ConvertRomanNumberNineToNumber() {
+        IntegerNumberConverter integerNumberConverter = new IntegerNumberConverter();
+
+        assertEquals(9,integerNumberConverter.convert("IX"));
+    }
+
+    @Test
+    public void ConvertRomanNumberFiveFiftySixToNumber() {
+        IntegerNumberConverter integerNumberConverter = new IntegerNumberConverter();
+
+        assertEquals(556,integerNumberConverter.convert("DLVI"));
+    }
+
+    @Test
+    public void ConvertRomanNumberElevenHunderedTwentyThreeToNumber() {
+        IntegerNumberConverter integerNumberConverter = new IntegerNumberConverter();
+
+        assertEquals(1123,integerNumberConverter.convert("MCXXIII"));
+    }
+
     //Negative test cases
     @Test
     public void ConvertZeroToNumeral() {
@@ -96,4 +131,5 @@ public class RomanNumeralsConverterTest {
 
         assertEquals("Not a roman numeral",romanNumeralsConverter.convert(0));
     }
+
 }
