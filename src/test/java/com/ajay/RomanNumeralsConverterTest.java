@@ -1,5 +1,6 @@
 package com.ajay;
 
+import org.ajay.IntegerNumberConverter;
 import org.ajay.RomanNumeralsConverter;
 import org.junit.jupiter.api.Test;
 
@@ -70,6 +71,15 @@ public class RomanNumeralsConverterTest {
         RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
 
         assertEquals("MXV",romanNumeralsConverter.convert(1015));
+    }
+
+
+    //Converting the Roman Numerals to Integers
+    @Test
+    public void ConvertRomanNumberOneToNumber() {
+        IntegerNumberConverter integerNumberConverter = new IntegerNumberConverter();
+
+        assertEquals(1,integerNumberConverter.convert("I"));
     }
 
     //Negative test cases
